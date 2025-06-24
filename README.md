@@ -93,3 +93,15 @@ Successful UI/UX balances **visual appeal**, **intuitive navigation**, and **fun
 ---
 
 > Great design is invisible. When users book with ease and confidence, the UI/UX has done its job.
+## 👥 Project Roles and Responsibilities
+
+| Role                | Responsibilities                                                                                   |
+|---------------------|--------------------------------------------------------------------------------------------------|
+| **Project Manager**  | Oversees timeline, coordinates team, manages deliverables                                        |
+| **Frontend Developers** | Implements UI components, ensures responsive design                                           |
+| **Backend Developers**  | Builds APIs, manages database, implements business logic                                       |
+| **Designers**           | Creates mockups, maintains design system, ensures UX quality                                  |
+| **QA/Testers**          | Writes test cases, performs testing, reports bugs                                             |
+| **DevOps Engineers**    | Manages deployment, CI/CD pipeline, server infrastructure                                      |
+| **Product Owner**       | Defines requirements, prioritizes features, represents stakeholders                            |
+| **Scrum Master**        | Facilitates agile processes, removes blockers, organizes meetings                              |
