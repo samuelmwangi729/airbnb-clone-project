@@ -159,3 +159,138 @@ Creates wireframes, mockups, and design systems using tools like Figma. Ensures 
 ---
 
 > Clear roles and responsibilities foster efficient collaboration and ensure all aspects of the project are addressed thoroughly.
+## 🛠️ Technology Stack
+
+This project leverages a modern and versatile technology stack to build a scalable, secure, and maintainable booking platform:
+
+- **Django:** A high-level Python web framework used to build robust backend services and RESTful APIs efficiently.
+- **MySQL:** A relational database management system for storing and managing application data with structured schema.
+- **GraphQL:** A flexible query language and runtime for APIs that allows clients to request exactly the data they need.
+- **Docker:** Containerization tool used to package the application and its dependencies for consistent deployment across environments.
+- **GitHub Actions:** A CI/CD platform integrated with GitHub to automate testing, building, and deployment pipelines.
+- **Markdown:** Used for writing comprehensive documentation including the README file, facilitating project transparency and communication.
+
+---
+
+> This stack supports both development and deployment, ensuring the application is performant, maintainable, and scalable.
+## 🗄️ Database Design
+
+The application’s database is designed to capture key entities and their relationships to support the booking platform’s functionality.
+
+### Key Entities and Important Fields
+
+- **Users**
+  - `id`: Unique identifier for each user
+  - `name`: Full name of the user
+  - `email`: User’s email address (unique)
+  - `password_hash`: Hashed password for authentication
+  - `role`: Defines user role (e.g., guest, host, admin)
+
+- **Properties**
+  - `id`: Unique identifier for each property
+  - `owner_id`: Reference to the User who owns the property
+  - `title`: Name or title of the property
+  - `description`: Detailed description of the property
+  - `location`: Geographic location of the property
+  - `price_per_night`: Cost for booking per night
+
+- **Bookings**
+  - `id`: Unique booking identifier
+  - `property_id`: Reference to the booked Property
+  - `user_id`: Reference to the User who made the booking
+  - `start_date`: Booking start date
+  - `end_date`: Booking end date
+  - `status`: Booking status (e.g., confirmed, cancelled)
+
+- **Reviews**
+  - `id`: Unique review identifier
+  - `booking_id`: Reference to the related Booking
+  - `rating`: Numeric rating given by the user
+  - `comment`: Textual feedback from the user
+  - `created_at`: Timestamp of when the review was created
+
+- **Payments**
+  - `id`: Unique payment identifier
+  - `booking_id`: Reference to the associated Booking
+  - `amount`: Total payment amount
+  - `payment_method`: Method used (credit card, PayPal, etc.)
+  - `payment_status`: Status of the payment (e.g., completed, pending)
+
+### Entity Relationships
+
+- A **User** can own multiple **Properties** (one-to-many).
+- A **Booking** belongs to one **User** (the guest) and one **Property**.
+- Each **Booking** can have one **Review** associated with it.
+- A **Payment** is linked to one **Booking** and handles transaction details.
+
+---
+
+> This relational structure supports key application features such as user management, property listings, booking workflows, and payment processing.
+## 🚀 Feature Breakdown
+
+### User Management  
+Enables users to create accounts, log in securely, and manage their profiles. This feature supports role differentiation between guests and hosts, providing personalized experiences and access controls.
+
+### Property Management  
+Allows hosts to list, edit, and delete property listings, including uploading images and setting availability. This feature ensures accurate and attractive property presentations to potential guests.
+
+### Booking System  
+Facilitates searching for available properties, selecting dates, and completing bookings through a streamlined and secure process. It manages booking statuses and prevents double bookings to maintain reliability.
+
+### Reviews and Ratings  
+Provides guests the ability to leave feedback and rate properties after their stay. This feature builds trust within the community and helps future users make informed decisions.
+
+### Payment Processing  
+Handles secure payment transactions linked to bookings, supporting multiple payment methods and tracking payment status. Ensures a safe and efficient financial flow between guests and hosts.
+
+### Security and Authentication  
+Implements robust authentication and authorization mechanisms to protect user data and restrict access to authorized actions only. Safeguards the platform against common security threats.
+
+### Responsive UI/UX  
+Delivers an intuitive, mobile-first interface with consistent design patterns, ensuring a seamless user experience across devices. Improves engagement and accessibility for all users.
+
+---
+
+> These features collectively create a comprehensive and user-friendly booking platform, mirroring the core functionalities of a real-world accommodation service.
+## 🔒 API Security
+
+Security is a top priority for this booking platform to protect sensitive user data, ensure secure transactions, and maintain trust.
+
+### Key Security Measures
+
+- **Authentication:**  
+  Users will securely authenticate using token-based methods (e.g., JWT) to verify identity before accessing protected resources. This prevents unauthorized access and ensures only valid users can interact with the system.
+
+- **Authorization:**  
+  Role-based access control (RBAC) will restrict user actions based on their roles (guest, host, admin). This limits access to sensitive endpoints and functions, protecting data integrity and privacy.
+
+- **Rate Limiting:**  
+  API requests will be throttled to prevent abuse, such as brute-force attacks or denial-of-service (DoS) attempts. Rate limiting helps maintain service availability and protects backend resources.
+
+- **Data Encryption:**  
+  Sensitive data, including passwords and payment details, will be encrypted both in transit (using HTTPS) and at rest. This protects user information from interception and unauthorized access.
+
+- **Input Validation and Sanitization:**  
+  All incoming data will be validated and sanitized to prevent injection attacks, cross-site scripting (XSS), and other common vulnerabilities.
+
+- **Secure Payment Processing:**  
+  Payment transactions will comply with industry standards (e.g., PCI DSS), using trusted third-party payment gateways to safeguard financial information.
+
+---
+
+> Implementing these security measures is essential to protect users, maintain regulatory compliance, and ensure the platform’s reliability and reputation.
+## ⚙️ CI/CD Pipeline
+
+Continuous Integration and Continuous Deployment (CI/CD) pipelines automate the process of building, testing, and deploying code changes. This ensures that new features and fixes are delivered quickly and reliably while maintaining high code quality.
+
+For this project, implementing a CI/CD pipeline is crucial to catch errors early, streamline collaboration among team members, and reduce manual deployment efforts, resulting in faster and more dependable releases.
+
+### Tools
+
+- **GitHub Actions:** Automates workflows such as running tests, building the application, and deploying to production or staging environments directly from the GitHub repository.
+- **Docker:** Provides containerization, enabling consistent environments across development, testing, and production, which simplifies deployment and scalability.
+- **Other CI/CD Platforms:** Alternatives like Jenkins, Travis CI, or CircleCI can also be used depending on team preferences and project requirements.
+
+---
+
+> Incorporating a robust CI/CD pipeline enhances development efficiency and ensures that the application remains stable throughout the software lifecycle.
