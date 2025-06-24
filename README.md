@@ -105,3 +105,26 @@ Successful UI/UX balances **visual appeal**, **intuitive navigation**, and **fun
 | **DevOps Engineers**    | Manages deployment, CI/CD pipeline, server infrastructure                                      |
 | **Product Owner**       | Defines requirements, prioritizes features, represents stakeholders                            |
 | **Scrum Master**        | Facilitates agile processes, removes blockers, organizes meetings                              |
+## 🧩 UI Component Patterns
+
+To ensure consistency, reusability, and maintainability throughout the application, the following key UI components will be developed:
+
+### Navbar
+- **Logo:** Brand identity and home navigation
+- **Search Bar:** Enables property searches with filters
+- **User Navigation:** Access to user profile, bookings, and settings
+- **Responsive Menu:** Adaptable layout for mobile and desktop devices
+
+### Property Card
+- **Property Image:** Visual highlight of the listing
+- **Basic Details:** Price, location, and rating displayed clearly
+- **Favorite Button:** Allows users to save properties they like
+- **Responsive Layout:** Ensures usability across different screen sizes
+
+### Footer
+- **Site Links:** Navigation to important pages (About, Contact, etc.)
+- **Company Information:** Legal and corporate details
+- **Social Media Links:** Access to social channels
+- **Copyright Information:** Intellectual property and rights notices
+
+Each component will be designed with reusability and visual consistency in mind, forming the building blocks of the application's user interface.
