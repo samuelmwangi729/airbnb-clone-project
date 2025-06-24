@@ -128,3 +128,34 @@ To ensure consistency, reusability, and maintainability throughout the applicati
 - **Copyright Information:** Intellectual property and rights notices
 
 Each component will be designed with reusability and visual consistency in mind, forming the building blocks of the application's user interface.
+## 👥 Team Roles
+
+Successful completion of this project relies on clear role definitions and collaborative teamwork. Below are the key roles involved and their responsibilities:
+
+### Backend Developer
+Responsible for designing and building the server-side logic, APIs, and database interactions. They ensure that the backend services are scalable, secure, and efficient, handling data processing and business logic.
+
+### Database Administrator (DBA)
+Manages the design, implementation, and maintenance of the project’s database systems. Ensures data integrity, optimizes queries, handles backups, and monitors database performance to support application needs.
+
+### Frontend Developer
+Builds the client-side interface using technologies like React, ensuring the application is responsive, accessible, and user-friendly. They connect the frontend to backend APIs and work closely with designers to implement UI/UX.
+
+### DevOps Engineer
+Sets up and manages the deployment pipeline using tools such as Docker and GitHub Actions. Responsible for continuous integration and delivery (CI/CD), infrastructure management, and maintaining system reliability.
+
+### QA Engineer / Tester
+Develops and executes test cases, automates testing where possible, and identifies bugs or issues. Ensures the application meets quality standards and functions as intended across different environments.
+
+### Product Owner
+Acts as the voice of the customer and stakeholders. Defines project requirements, prioritizes features, and ensures the development team builds the right product that delivers business value.
+
+### Project Manager
+Coordinates the project timeline, manages team communication, removes blockers, and ensures deliverables meet deadlines. Facilitates agile ceremonies and keeps the team aligned.
+
+### UX/UI Designer
+Creates wireframes, mockups, and design systems using tools like Figma. Ensures the application provides an intuitive and visually appealing user experience aligned with user needs.
+
+---
+
+> Clear roles and responsibilities foster efficient collaboration and ensure all aspects of the project are addressed thoroughly.
